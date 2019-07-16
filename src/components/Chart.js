@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import moment from "moment";
 import {
   LineChart,
@@ -26,12 +27,14 @@ const Chart = ({ sparklineData }) => {
     })
     .filter(data => data);
 
+  
+
   return (
     <LineChart width={1100} height={300} data={formattedData}>
       <Line type="monotone" dataKey="value" stroke="#8884d8" />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <XAxis dataKey="date" interval={3} />
-      <YAxis />
+      <XAxis dataKey="date" interval={3} stroke={JSON.parse(localStorage.getItem('darkMode')) ? 'white' : 'black'}/>
+      <YAxis stroke={'black'}/>
       <Tooltip />
     </LineChart>
   );
