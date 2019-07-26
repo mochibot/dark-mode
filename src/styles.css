@@ -170,6 +170,7 @@ img {
   height: 70px;
   justify-content: space-between;
   padding: 0 3%;
+  margin-bottom: 3%; 
   width: 100%;
   -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
@@ -225,4 +226,20 @@ img {
 
 .coin__logo {
   width: 50px;
+}
+
+.dark-mode {
+  background: rgb(46, 46, 46);
+  color: white;
+}
+
+.intro {
+  font-size: 18px;
+}
+
+.App select {
+  margin: 20px;
+  width: 150px;
+  font-size: 18px;
+  padding: 5px;
 }
